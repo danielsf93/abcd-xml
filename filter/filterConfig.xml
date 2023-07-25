@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filterConfig SYSTEM "../../../../lib/pkp/dtd/filterConfig.dtd">
+
+<!--
+  * filterConfig.xml
+  *
+  * Copyright (c) 2014-2021 Simon Fraser University
+  * Copyright (c) 2003-2021 John Willinsky
+  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+  *
+  * Filter Configuration.
+  -->
+<filterConfig>
+	<filterGroups>
+		<!-- Abcd XML monograph output -->
+		<filterGroup
+			symbolic="monograph=>abcd-xml"
+			displayName="plugins.importexport.abcd.displayName"
+			description="plugins.importexport.abcd.description"
+			inputType="class::classes.submission.Submission[]"
+			outputType="xml::schema(plugins/importexport/abcd/abcd.xsd)" />
+		<!-- Abcd XML monograph input -->
+		<filterGroup
+			symbolic="abcd-xml=>monograph"
+			displayName="plugins.importexport.abcd.displayName"
+			description="plugins.importexport.abcd.description"
+			inputType="xml::schema(plugins/importexport/abcd/abcd.xsd)"
+			outputType="class::classes.submission.Submission[]" />
+		<!-- Abcd XML author output -->
+		<filterGroup
+			symbolic="author=>abcd-xml"
+			displayName="plugins.importexport.abcd.displayName"
+			description="plugins.importexport.abcd.description"
+			inputType="class::classes.monograph.Author[]"
+			outputType="xml::schema(plugins/importexport/abcd/abcd.xsd)" />
+		<!-- Abcd XML author input -->
+		<filterGroup
+			symbolic="abcd-xml=>author"
+			displayName="plugins.importexport.abcd.displayName"
+			description="plugins.importexport.abcd.description"
+			inputType="xml::schema(plugins/importexport/abcd/abcd.xsd)"
+			outputType="class::classes.monograph.Author[]" />
+		<!-- Publication Format abcd XML output -->
+		<filterGroup
+			symbolic="publication-format=>abcd-xml"
+			displayName="plugins.importexport.abcd.displayName"
+			description="plugins.importexport.abcd.description"
+			inputType="class::classes.publicationFormat.PublicationFormat"
+			outputType="xml::schema(plugins/importexport/abcd/abcd.xsd)" />
+		<!-- Publication Format abcd XML input -->
+		<filterGroup
+			symbolic="abcd-xml=>PublicationFormat"
+			displayName="plugins.importexport.abcd.displayName"
+			description="plugins.importexport.abcd.description"
+			inputType="xml::schema(plugins/importexport/abcd/abcd.xsd)"
+			outputType="class::classes.publicationFormat.PublicationFormat[]" />
+		<!-- Submission file abcd XML output -->
+		<filterGroup
+			symbolic="SubmissionFile=>abcd-xml"
+			displayName="plugins.importexport.abcd.displayName"
+			description="plugins.importexport.abcd.description"
+			inputType="class::lib.pkp.classes.submission.SubmissionFile"
+			outputType="xml::schema(plugins/importexport/abcd/abcd.xsd)" />
+		<!-- Submission file abcd XML input -->
+		<filterGroup
+			symbolic="abcd-xml=>SubmissionFile"
+			displayName="plugins.importexport.abcd.displayName"
+			description="plugins.importexport.abcd.description"
+			inputType="xml::schema(plugins/importexport/abcd/abcd.xsd)"
+			outputType="class::lib.pkp.classes.submission.SubmissionFile" />
+		<filterGroup
+			symbolic="monograph=>onix30-xml"
+			displayName="plugins.importexport.onix30.displayName"
+			description="plugins.importexport.onix30.description"
+			inputType="class::classes.submission.Submission"
+			outputType="xml::schema(plugins/importexport/abcd/ONIX_BookProduct_3.0_reference_notstrict.xsd)" />
+		<filterGroup
+			symbolic="publication=>abcd-xml"
+			displayName="plugins.importexport.abcd.displayName"
+			description="plugins.importexport.abcd.description"
+			inputType="class::classes.publication.Publication"
+			outputType="xml::schema(plugins/importexport/abcd/abcd.xsd)" />
+		<filterGroup
+			symbolic="abcd-xml=>Publication"
+			displayName="plugins.importexport.abcd.displayName"
+			description="plugins.importexport.abcd.description"
+			inputType="xml::schema(plugins/importexport/abcd/abcd.xsd)"
+			outputType="class::classes.publication.Publication" />
+		<filterGroup
+			symbolic="chapter=>abcd-xml"
+			displayName="plugins.importexport.abcd.displayName"
+			description="plugins.importexport.abcd.description"
+			inputType="class::classes.monograph.Chapter[]"
+			outputType="xml::schema(plugins/importexport/abcd/abcd.xsd)" />
+		<filterGroup
+			symbolic="abcd-xml=>chapter"
+			displayName="plugins.importexport.abcd.displayName"
+			description="plugins.importexport.abcd.description"
+			inputType="xml::schema(plugins/importexport/abcd/abcd.xsd)"
+			outputType="class::classes.monograph.Chapter" />
+
+	</filterGroups>
+	<filters>
+		<!-- Abcd XML monograph output -->
+		<filter
+			inGroup="monograph=>abcd-xml"
+			class="plugins.importexport.abcd.filter.MonographAbcdXmlFilter"
+			isTemplate="0" />
+		<!-- Abcd XML monograph input -->
+		<filter
+			inGroup="abcd-xml=>monograph"
+			class="plugins.importexport.abcd.filter.AbcdXmlMonographFilter"
+			isTemplate="0" />
+		<!-- Abcd XML author output -->
+		<filter
+			inGroup="author=>abcd-xml"
+			class="plugins.importexport.abcd.filter.AuthorAbcdXmlFilter"
+			isTemplate="0" />
+		<!-- Abcd XML monograph input -->
+		<filter
+			inGroup="abcd-xml=>author"
+			class="plugins.importexport.abcd.filter.AbcdXmlAuthorFilter"
+			isTemplate="0" />
+		<!-- Abcd XML publication format output -->
+		<filter
+			inGroup="publication-format=>abcd-xml"
+			class="plugins.importexport.abcd.filter.PublicationFormatAbcdXmlFilter"
+			isTemplate="0" />
+		<!-- Abcd XML publication format input -->
+		<filter
+			inGroup="abcd-xml=>PublicationFormat"
+			class="plugins.importexport.abcd.filter.AbcdXmlPublicationFormatFilter"
+			isTemplate="0" />
+		<!-- Abcd XML submission file input -->
+		<filter
+			inGroup="abcd-xml=>SubmissionFile"
+			class="plugins.importexport.abcd.filter.AbcdXmlMonographFileFilter"
+			isTemplate="0" />
+		<!-- Abcd XML submission file output -->
+		<filter
+			inGroup="SubmissionFile=>abcd-xml"
+			class="lib.pkp.plugins.importexport.abcd.filter.SubmissionFileAbcdXmlFilter"
+			isTemplate="0" />
+		<!-- ONIX 3.0 XML monograph output -->
+		<filter
+			inGroup="monograph=>onix30-xml"
+			class="plugins.importexport.onix30.filter.MonographONIX30XmlFilter"
+			isTemplate="0" />
+		<filter
+			inGroup="publication=>abcd-xml"
+			class="plugins.importexport.abcd.filter.PublicationAbcdXmlFilter"
+			isTemplate="0" />
+		<filter
+			inGroup="abcd-xml=>Publication"
+			class="plugins.importexport.abcd.filter.AbcdXmlPublicationFilter"
+			isTemplate="0" />
+		<filter
+			inGroup="chapter=>abcd-xml"
+			class="plugins.importexport.abcd.filter.ChapterAbcdXmlFilter"
+			isTemplate="0" />
+		<filter
+			inGroup="abcd-xml=>chapter"
+			class="plugins.importexport.abcd.filter.AbcdXmlChapterFilter"
+			isTemplate="0" />
+	</filters>
+</filterConfig>
