@@ -13,7 +13,7 @@
  * @brief Base class that converts a Abcd XML document to a set of publications
  */
 
-import('lib.pkp.plugins.importexport.abcd.filter.AbcdImportFilter');
+import('plugins.importexport.abcd.extras.abcd.filter.AbcdImportFilter');
 
 class AbcdXmlPKPPublicationFilter extends AbcdImportFilter {
 	/**
@@ -33,7 +33,7 @@ class AbcdXmlPKPPublicationFilter extends AbcdImportFilter {
 	 * @copydoc PersistableFilter::getClassName()
 	 */
 	function getClassName() {
-		return 'lib.pkp.plugins.importexport.abcd.filter.AbcdXmlPKPPublicationFilter';
+		return 'plugins.importexport.abcd.extras.abcd.filter.AbcdXmlPKPPublicationFilter';
 	}
 
 

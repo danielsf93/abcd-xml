@@ -13,7 +13,7 @@
  * @brief Base class that converts a set of authors to a Abcd XML document
  */
 
-import('lib.pkp.plugins.importexport.abcd.filter.AbcdExportFilter');
+import('plugins.importexport.abcd.extras.abcd.filter.AbcdExportFilter');
 
 class ChapterAbcdXmlFilter extends AbcdExportFilter {
 	/**

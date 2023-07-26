@@ -13,7 +13,7 @@
  * @brief Base class that converts a set of submissions to a Abcd XML document
  */
 
-import('lib.pkp.plugins.importexport.abcd.filter.AbcdExportFilter');
+import('plugins.importexport.abcd.extras.abcd.filter.AbcdExportFilter');
 
 class SubmissionAbcdXmlFilter extends AbcdExportFilter {
 
@@ -36,7 +36,7 @@ class SubmissionAbcdXmlFilter extends AbcdExportFilter {
 	 * @copydoc PersistableFilter::getClassName()
 	 */
 	function getClassName() {
-		return 'lib.pkp.plugins.importexport.abcd.filter.SubmissionAbcdXmlFilter';
+		return 'plugins.importexport.abcd.extras.abcd.filter.SubmissionAbcdXmlFilter';
 	}
 
 

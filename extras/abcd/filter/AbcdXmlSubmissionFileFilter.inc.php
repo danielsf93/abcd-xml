@@ -14,7 +14,7 @@
  */
 use Illuminate\Database\Capsule\Manager as Capsule;
 
-import('lib.pkp.plugins.importexport.abcd.filter.AbcdImportFilter');
+import('plugins.importexport.abcd.extras.abcd.filter.AbcdImportFilter');
 
 class AbcdXmlSubmissionFileFilter extends AbcdImportFilter {
 	/**
@@ -52,7 +52,7 @@ class AbcdXmlSubmissionFileFilter extends AbcdImportFilter {
 	 * @copydoc PersistableFilter::getClassName()
 	 */
 	function getClassName() {
-		return 'lib.pkp.plugins.importexport.abcd.filter.AbcdXmlSubmissionFileFilter';
+		return 'plugins.importexport.abcd.extras.abcd.filter.AbcdXmlSubmissionFileFilter';
 	}
 
 

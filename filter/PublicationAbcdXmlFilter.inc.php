@@ -13,7 +13,7 @@
  * @brief Class that converts a Article to a Abcd XML document.
  */
 
-import('lib.pkp.plugins.importexport.abcd.filter.PKPPublicationAbcdXmlFilter');
+import('plugins.importexport.abcd.extras.abcd.filter.PKPPublicationAbcdXmlFilter');
 
 class PublicationAbcdXmlFilter extends PKPPublicationAbcdXmlFilter {
 	//

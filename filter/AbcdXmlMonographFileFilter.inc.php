@@ -13,7 +13,7 @@
  * @brief Class that converts a Abcd XML document to a monograph file.
  */
 
-import('lib.pkp.plugins.importexport.abcd.filter.AbcdXmlSubmissionFileFilter');
+import('plugins.importexport.abcd.extras.abcd.filter.AbcdXmlSubmissionFileFilter');
 
 class AbcdXmlMonographFileFilter extends AbcdXmlSubmissionFileFilter {
 	/**

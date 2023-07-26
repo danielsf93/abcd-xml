@@ -13,7 +13,7 @@
  * @brief Filter to convert an artwork file to a Abcd XML document
  */
 
-import('lib.pkp.plugins.importexport.abcd.filter.SubmissionFileAbcdXmlFilter');
+import('plugins.importexport.abcd.extras.abcd.filter.SubmissionFileAbcdXmlFilter');
 
 class MonographFileAbcdXmlFilter extends SubmissionFileAbcdXmlFilter {
 	//

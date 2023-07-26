@@ -13,7 +13,7 @@
  * @brief Base class that converts a representation to a Abcd XML document
  */
 
-import('lib.pkp.plugins.importexport.abcd.filter.AbcdExportFilter');
+import('plugins.importexport.abcd.extras.abcd.filter.AbcdExportFilter');
 
 class RepresentationAbcdXmlFilter extends AbcdExportFilter {
 	/**
@@ -33,7 +33,7 @@ class RepresentationAbcdXmlFilter extends AbcdExportFilter {
 	 * @copydoc PersistableFilter::getClassName()
 	 */
 	function getClassName() {
-		return 'lib.pkp.plugins.importexport.abcd.filter.RepresentationAbcdXmlFilter';
+		return 'plugins.importexport.abcd.extras.abcd.filter.RepresentationAbcdXmlFilter';
 	}
 
 

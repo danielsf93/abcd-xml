@@ -13,7 +13,7 @@
  * @brief Class that converts a Author to a Abcd XML document.
  */
 
-import('lib.pkp.plugins.importexport.abcd.filter.PKPAuthorAbcdXmlFilter');
+import('plugins.importexport.abcd.extras.abcd.filter.PKPAuthorAbcdXmlFilter');
 
 class AuthorAbcdXmlFilter extends PKPAuthorAbcdXmlFilter {
 	//

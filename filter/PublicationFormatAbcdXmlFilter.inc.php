@@ -13,7 +13,7 @@
  * @brief Class that converts a PublicationFormat to a Abcd XML document.
  */
 
-import('lib.pkp.plugins.importexport.abcd.filter.RepresentationAbcdXmlFilter');
+import('plugins.importexport.abcd.extras.abcd.filter.RepresentationAbcdXmlFilter');
 
 class PublicationFormatAbcdXmlFilter extends RepresentationAbcdXmlFilter {
 	/**

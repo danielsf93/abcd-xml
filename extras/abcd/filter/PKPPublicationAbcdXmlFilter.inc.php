@@ -13,7 +13,7 @@
  * @brief Base class that converts a PKPPublication to a Abcd XML document
  */
 
-import('lib.pkp.plugins.importexport.abcd.filter.AbcdExportFilter');
+import('plugins.importexport.abcd.extras.abcd.filter.AbcdExportFilter');
 
 class PKPPublicationAbcdXmlFilter extends AbcdExportFilter {
 	/**
@@ -32,7 +32,7 @@ class PKPPublicationAbcdXmlFilter extends AbcdExportFilter {
 	 * @copydoc PersistableFilter::getClassName()
 	 */
 	function getClassName() {
-		return 'lib.pkp.plugins.importexport.abcd.filter.PKPPublicationAbcdXmlFilter';
+		return 'plugins.importexport.abcd.extras.abcd.filter.PKPPublicationAbcdXmlFilter';
 	}
 
 	//

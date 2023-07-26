@@ -13,7 +13,7 @@
  * @brief Base class that converts a DataObject to a Abcd XML document
  */
 
-import('lib.pkp.plugins.importexport.abcd.filter.AbcdImportExportFilter');
+import('plugins.importexport.abcd.extras.abcd.filter.AbcdImportExportFilter');
 
 class AbcdExportFilter extends AbcdImportExportFilter {
 

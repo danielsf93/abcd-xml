@@ -13,7 +13,7 @@
  * @brief Base class that converts a monograph to an ONIX 3.0 document
  */
 
-import('lib.pkp.plugins.importexport.abcd.filter.AbcdExportFilter');
+import('plugins.importexport.abcd.extras.abcd.filter.AbcdExportFilter');
 
 class MonographONIX30XmlFilter extends AbcdExportFilter {
 

@@ -13,7 +13,7 @@
  * @brief Base class that converts a set of authors to a Abcd XML document
  */
 
-import('lib.pkp.plugins.importexport.abcd.filter.AbcdExportFilter');
+import('plugins.importexport.abcd.extras.abcd.filter.AbcdExportFilter');
 
 class PKPAuthorAbcdXmlFilter extends AbcdExportFilter {
 	/**
@@ -33,7 +33,7 @@ class PKPAuthorAbcdXmlFilter extends AbcdExportFilter {
 	 * @copydoc PersistableFilter::getClassName()
 	 */
 	function getClassName() {
-		return 'lib.pkp.plugins.importexport.abcd.filter.PKPAuthorAbcdXmlFilter';
+		return 'plugins.importexport.abcd.extras.abcd.filter.PKPAuthorAbcdXmlFilter';
 	}
 
 

@@ -14,7 +14,7 @@
  * application's specifics.
  */
 
-import('lib.pkp.plugins.importexport.abcd.PKPAbcdImportExportDeployment');
+import('plugins.importexport.abcd.extras.abcd.PKPAbcdImportExportDeployment');
 
 class AbcdImportExportDeployment extends PKPAbcdImportExportDeployment {
 	/**
